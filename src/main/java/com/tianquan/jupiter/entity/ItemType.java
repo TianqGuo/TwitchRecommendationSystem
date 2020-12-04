@@ -1,5 +1,5 @@
 package com.tianquan.jupiter.entity;
 
-public class ItemType {
-    
+public enum ItemType {
+    STREAM, VIDEO, CLIP
 }
