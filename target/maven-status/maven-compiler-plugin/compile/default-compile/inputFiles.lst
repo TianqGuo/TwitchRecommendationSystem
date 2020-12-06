@@ -1,4 +1,7 @@
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\servlet\TargetServlet.java
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\servlet\SearchServlet.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\external\TwitchClient.java
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\ItemType.java
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\Item.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\external\TwitchException.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\Game.java
