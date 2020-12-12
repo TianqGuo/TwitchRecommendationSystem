@@ -1,13 +1,17 @@
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\LoginResponseBody.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\servlet\TargetServlet.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\servlet\SearchServlet.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\external\TwitchClient.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\ItemType.java
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\User.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\db\MySQLException.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\Item.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\FavoriteRequestBody.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\db\MySQLTableCreator.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\db\MySQLConnection.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\db\MySQLDBUtil.java
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\servlet\ServletUtil.java
+D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\LoginRequestBody.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\servlet\FavoriteServlet.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\external\TwitchException.java
 D:\IdeaProjects\TwitchRecommendationSystem\src\main\java\com\tianquan\jupiter\entity\Game.java
