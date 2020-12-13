@@ -1,0 +1,186 @@
+<!-- ES6: -->
+
+<!-- let const var difference -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  // ES6 / React / JSX code from here
+    console.log('let const var difference');
+    var a = 1;
+    var c = 2;
+    let b = 1;
+    // let b = 2; // ?
+    console.log(b);
+    // ===============
+    function test() {
+       var a = 1;
+       var a = 2;
+       let b = 10;
+    //    let b = 20;
+       console.log(a, b);
+    }
+    test();
+    // // ===== block scope ======
+    // for(let i = 0; i < 2; i++) {
+    // //    console.log(i);
+    // }
+
+    // // must assign a value 
+    // const d; // ?
+
+    // // cannot be reassigned
+    // const t = 123;
+    // t = 456;
+    // // block scope
+    // {
+    //    const a = 123;
+    //    console.log(a); // ?
+    // }
+    // console.log(a); // ?
+    // console.log(i);  // ?
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- Destructuring -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  // ES6 / React / JSX code from here
+    console.log('Destructuring');
+    // Array
+    var [a, b, c] = [1, 2, 3];
+    console.log(a,b,c);
+
+
+    // Object
+    var {name, age} = {name: 'Joe', age: 10}
+    console.log(name, age)
+
+    // Function
+    function fn([a, b]){
+    console.log(a + b);
+    }
+    fn([1, 2]); 
+</script>
+</body>
+</html>
+
+
+
+
+<!-- Default + Rest + Spread -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  // ES6 / React / JSX code from here
+    // default
+    console.log('Default + Rest + Spread');
+    function add1(x = 1, y = 2){
+      console.log(x + y);
+    }
+    add1(); // ?
+    add1(5, 6); // ? 
+
+    // rest
+    function fn(...args){
+    let sum = 0;
+       for(let i = 0; i < args.length; i++){
+       sum += args[i];
+    }
+    console.log(sum);
+    }
+    fn(1, 2, 3, 4);
+
+    // spread
+    let arr = [1, 2, 3];
+    let arr1 = [...arr, 4, 5];
+    console.log(arr1);
+    let obj1 = { a: 1, b: 2};
+    let obj2 = {...obj1, c: 3};
+    console.log(obj2);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- Arrow Function -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  // ES6 / React / JSX code from here
+    // default
+    console.log('Arrow Function');
+    // Arrow Function
+    var f = (a, b) => {
+        a++;
+        return a + b;
+    }
+    console.log(f(1, 2)); // ?
+
+
+    function fn() {
+        console.log('fn ' ,this);
+        const run = () => {
+            console.log(this);
+            console.log(this.a);
+        }
+        run();
+    }
+    var item1 = {
+        a : 1,
+        fn : fn
+    }
+    var item2 = {
+        a : 100,
+        fn : fn
+    }
+    item1.fn(); //?
+    item2.fn(); //?
+</script>
+</body>
+</html>
+
+
+
+
