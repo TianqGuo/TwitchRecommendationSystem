@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //Part1
+        // React code will go here
+        // create virtual dom element
+        const ele1 = React.createElement('h1', {className: 'box'}, 'hello react!');
+        // render DOM
+        ReactDOM.render(
+           ele1,
+           document.getElementById('root')
+        );
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //Part2 JSX
+        // JS expression
+        const a = 10;
+        const str = 'this is a str';
+        const arr = [ <p key='1'>first</p>, <p key='2'>second</p>, <p key='3'>third</p> ];
+        //map
+        const arr1 = ['apple', 'pear', 'berry'];
+        const res = arr1.map((item, index) => {
+                   return <p key={index}>* {item} *</p>
+               });
+        // JS function
+        function formatName(user) {
+          return user.firstName + ' ' + user.lastName;
+        }
+        const user = {
+          firstName: 'Harper',
+          lastName: 'Perez',
+        };
+        const element = <h1>Hello, {formatName(user)}!</h1>;
+        ReactDOM.render(element, document.getElementById('root'));
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //Part3 React Component
+        // // use JavaScript function
+        // function Hello(props) {
+        //    console.log(props);
+        //    return <p>hello react {props.person.name}</p>
+        // }
+        // const person = {
+        //    name : 'Joe',
+        //    age : 10
+        // }
+        // ReactDOM.render(
+        //    <Hello person={person}/>,
+        //    document.getElementById('root')
+        // );
+
+        // use ES6 class
+        class Hello extends React.Component {
+           constructor() {
+               super();
+           }
+           render() {
+               return <h1>hello react, {this.props.name}</h1>
+           }
+        }
+        ReactDOM.render(
+           <Hello name={'Lucy'}></Hello>,
+           document.getElementById('root')
+        );
+    </script>
+  </body>
+</html>
