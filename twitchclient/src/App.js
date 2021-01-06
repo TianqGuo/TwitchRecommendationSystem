@@ -119,6 +119,7 @@ class App extends React.Component {
                  :
                 (
                   <>
+                    {/* this will call Login.js and Register.js and perform related activities */}
                     <Login onSuccess={this.signinOnSuccess} />
                     <Register />
                     

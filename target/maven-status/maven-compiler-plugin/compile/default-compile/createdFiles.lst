@@ -8,14 +8,17 @@ com\tianquan\jupiter\entity\FavoriteRequestBody.class
 com\tianquan\jupiter\external\TwitchClient$1.class
 com\tianquan\jupiter\entity\Item$Builder.class
 com\tianquan\jupiter\servlet\FavoriteServlet.class
+com\tianquan\jupiter\servlet\RecommendationServlet.class
 com\tianquan\jupiter\entity\ItemType.class
 com\tianquan\jupiter\servlet\SearchServlet.class
+com\tianquan\jupiter\recommendation\ItemRecommender.class
 com\tianquan\jupiter\servlet\RegisterServlet.class
 com\tianquan\jupiter\entity\Game$Builder.class
 com\tianquan\jupiter\servlet\LogoutServlet.class
 com\tianquan\jupiter\external\TwitchException.class
 com\tianquan\jupiter\servlet\TargetServlet.class
 com\tianquan\jupiter\entity\Item$1.class
+com\tianquan\jupiter\recommendation\RecommendationException.class
 com\tianquan\jupiter\entity\User.class
 com\tianquan\jupiter\servlet\ServletUtil.class
 com\tianquan\jupiter\entity\LoginResponseBody.class

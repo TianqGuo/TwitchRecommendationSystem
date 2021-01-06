@@ -20,8 +20,9 @@ class Login extends React.Component {
     })
   }
  
+  // when the form is onfinish, it will call this onFinish function and then call login function in utils.js
   onFinish = (data) => {
-    // this data is the response
+    // this data is the username and password object returned by Form
     login(data)
       .then((data) => {
         this.setState({
