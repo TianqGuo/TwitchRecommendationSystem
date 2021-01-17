@@ -26,6 +26,7 @@ class CustomSearch extends React.Component {
         this.setState({
           displayModal: false,
         })
+        // The following line will run customSearchOnSuccess in App.js
         this.props.onSuccess(data);
       })
       .catch((err) => {
