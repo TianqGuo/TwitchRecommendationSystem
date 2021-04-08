@@ -29,7 +29,7 @@ class Login extends React.Component {
           displayModal: false,
         })
         message.success(`Welcome back, ${data.name}`);
-        // The following line will run signinOnSuccess in App.js
+        // The following line will run signinOnSuccess in App.js, this is CALL BACK function
         this.props.onSuccess();
       }).catch((err) => {
         message.error(err.message);

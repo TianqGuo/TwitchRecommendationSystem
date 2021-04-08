@@ -20,7 +20,7 @@ import java.util.*;
 
 
 public class TwitchClient {
-    private static final String TOKEN = "Bearer Bearer g0pvowcvgwbs1elaqd3sbtaz4b0pwg";
+    private static final String TOKEN = "Bearer dg88g68vzfbwjkquk8mqrdzxbutg7f";
     private static final String CLIENT_ID = "vsex0gqe661av0erxx8uedn7yrhiud";
     private static final String TOP_GAME_URL_TEMPLATE = "https://api.twitch.tv/helix/games/top?first=%s";
     private static final String GAME_SEARCH_URL_TEMPLATE = "https://api.twitch.tv/helix/games?name=%s";
@@ -49,7 +49,7 @@ public class TwitchClient {
 
         HttpGet request = new HttpGet(url);
         try {
-            request.setHeader("Authorization", "Bearer g0pvowcvgwbs1elaqd3sbtaz4b0pwg");
+            request.setHeader("Authorization", "Bearer dg88g68vzfbwjkquk8mqrdzxbutg7f");
             request.setHeader("Client-Id", "vsex0gqe661av0erxx8uedn7yrhiud");
             return httpclient.execute(request, responseHandler);
         } catch (IOException e) {
